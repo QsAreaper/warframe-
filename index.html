@@ -33,3 +33,53 @@
 </body>
     <script src="script.js"></script>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestial Traders Guild Market</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Celestial Traders Guild Market</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#trades">Trades</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome, Tenno!</h2>
+            <p>Welcome to the Celestial Traders Guild Market. Here you can buy, sell, and trade your Warframe items.</p>
+        </section>
+        <section id="trades">
+            <h2>Current Trades</h2>
+            <div id="item-list"></div>
+        </section>
+        <section id="submit-item">
+            <h2>Submit an Item</h2>
+            <form id="item-form">
+                <label for="item-name">Item Name:</label>
+                <input type="text" id="item-name" name="item-name" required>
+                <label for="item-price">Item Price:</label>
+                <input type="text" id="item-price" name="item-price" required>
+                <label for="item-description">Description:</label>
+                <textarea id="item-description" name="item-description" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Celestial Traders Guild</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
